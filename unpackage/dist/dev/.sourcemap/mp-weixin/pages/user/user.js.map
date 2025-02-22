@@ -1,0 +1,1 @@
+{"version":3,"file":"user.js","sources":["../../../../../Program Files/HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvdXNlci91c2VyLnZ1ZQ"],"sourcesContent":["import MiniProgramPage from 'C:/Users/19253/Desktop/AI-UniApp/ClientUniApp/pages/user/user.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;;;;;;;;;AACA,GAAG,WAAW,eAAe;"}

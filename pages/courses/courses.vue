@@ -1,6 +1,6 @@
 <template>
 	<view>
-		111
+		222
 	</view>
 </template>
 
@@ -9,5 +9,5 @@
 </script>
 
 <style>
-	
+	       
 </style>

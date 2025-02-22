@@ -1,0 +1,73 @@
+#user.data-v-0f7520f0 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F6F6F6;
+}
+#user .user-info.data-v-0f7520f0 {
+  margin: 30rpx 0;
+  padding: 30rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #cbcbcb;
+  border-bottom: 1rpx solid #cbcbcb;
+}
+#user .user-info .upper.data-v-0f7520f0 {
+  display: flex;
+  margin-bottom: 40rpx;
+}
+#user .user-info .upper .avatar.data-v-0f7520f0 {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 20rpx;
+}
+#user .user-info .upper .name-block.data-v-0f7520f0 {
+  margin: 0 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#user .user-info .upper .name-block .name.data-v-0f7520f0 {
+  font-size: 50rpx;
+  letter-spacing: 5rpx;
+}
+#user .user-info .upper .name-block .career.data-v-0f7520f0 {
+  font-size: 35rpx;
+  color: #8b8b8b;
+}
+#user .user-info .lower .info-detail.data-v-0f7520f0 {
+  font-size: 35rpx;
+  line-height: 50rpx;
+  color: #8b8b8b;
+}
+#user .func-block.data-v-0f7520f0 {
+  margin: 50rpx 0;
+}
+#user .func-block .func-item.data-v-0f7520f0 {
+  height: 100rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #cbcbcb;
+  border-bottom: 1rpx solid #cbcbcb;
+  padding: 0 30rpx;
+  display: flex;
+  align-items: center;
+}
+#user .func-block .func-item .icon.data-v-0f7520f0 {
+  height: 75rpx;
+  width: 75rpx;
+}
+#user .func-block .func-item .text.data-v-0f7520f0 {
+  margin: 0 20rpx;
+  font-size: 40rpx;
+  line-height: 100rpx;
+}
+#user .func-block .func-item.data-v-0f7520f0::after {
+  content: '›';
+  /* 右箭头符号 */
+  margin-left: auto;
+  /* 让箭头靠右 */
+  font-size: 70rpx;
+  color: #cbcbcb;
+}
