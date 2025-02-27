@@ -30,32 +30,14 @@
   border-bottom: 1rpx solid #cbcbcb;
   background-color: #fff;
 }
-#index .more-resource .bar.data-v-1cf27b2a {
-  height: 75rpx;
-  line-height: 75rpx;
-  display: flex;
-  align-items: center;
-  border-bottom: 1rpx solid #cbcbcb;
-}
-#index .more-resource .bar.data-v-1cf27b2a::before {
-  content: '';
-  /* 必须添加 content 属性才能显示伪元素 */
-  width: 10rpx;
-  height: 30rpx;
-  margin-right: 10rpx;
-  background-color: #39c5bb;
-}
 #index .more-resource .resource-box.data-v-1cf27b2a {
-  margin: 30rpx 0;
   display: flex;
-  /* 设置为 Flexbox 布局 */
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  /* 自动换行 */
-  gap: 10px;
 }
 #index .more-resource .resource-box .item.data-v-1cf27b2a {
   position: relative;
+  margin: 20rpx;
   width: 300rpx;
   height: 200rpx;
 }

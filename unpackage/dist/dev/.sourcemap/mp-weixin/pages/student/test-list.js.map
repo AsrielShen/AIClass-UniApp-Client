@@ -1,0 +1,1 @@
+{"version":3,"file":"test-list.js","sources":["../../../../../Program Files/HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvc3R1ZGVudC90ZXN0LWxpc3QudnVl"],"sourcesContent":["import MiniProgramPage from 'C:/Users/19253/Desktop/AI-UniApp/ClientUniApp/pages/student/test-list.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;AACA,GAAG,WAAW,eAAe;"}

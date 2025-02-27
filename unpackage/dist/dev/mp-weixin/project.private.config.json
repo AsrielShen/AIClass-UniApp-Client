@@ -3,5 +3,25 @@
   "projectname": "ClientUniApp",
   "setting": {
     "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/teacher/random-call",
+          "pathName": "pages/teacher/random-call",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/teacher/features",
+          "pathName": "pages/teacher/features",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

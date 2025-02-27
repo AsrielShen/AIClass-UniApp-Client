@@ -1,0 +1,89 @@
+#teacher-features.data-v-081d8c74 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F6F6F6;
+}
+#teacher-features .class-features.data-v-081d8c74 {
+  padding: 0 30rpx;
+  border-bottom: 1rpx solid #cbcbcb;
+  background-color: #fff;
+}
+#teacher-features .class-features .item-block.data-v-081d8c74 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#teacher-features .class-features .item-block .item.data-v-081d8c74 {
+  width: 300rpx;
+  margin: 20rpx;
+  padding: 30rpx;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  position: relative;
+  background-color: aquamarine;
+  color: #fff;
+  z-index: 1;
+}
+#teacher-features .class-features .item-block .item.data-v-081d8c74::after {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  position: absolute;
+  left: 8%;
+  bottom: -10%;
+  border-radius: 20rpx;
+  opacity: 0.3;
+  transform: scale(0.9, 0.9);
+}
+#teacher-features .class-features .item-block .item .upper.data-v-081d8c74 {
+  display: flex;
+  justify-content: space-between;
+}
+#teacher-features .class-features .item-block .item .upper .nav-title.data-v-081d8c74 {
+  font-size: 32rpx;
+  line-height: 60rpx;
+}
+#teacher-features .class-features .item-block .item .upper .nav-title.data-v-081d8c74::first-letter {
+  font-size: 40rpx;
+  margin-right: 3rpx;
+}
+#teacher-features .class-features .item-block .item .upper .nav-icon.data-v-081d8c74 {
+  width: 60rpx;
+  height: 60rpx;
+}
+#teacher-features .class-features .item-block .item .nav-name.data-v-081d8c74 {
+  position: relative;
+  font-size: 28rpx;
+}
+#teacher-features .class-features .item-block .item .nav-name.data-v-081d8c74::first-letter {
+  font-weight: bold;
+  font-size: 36rpx;
+  margin-right: 1px;
+}
+#teacher-features .class-features .item-block .item .nav-name.data-v-081d8c74::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40rpx;
+  height: 6rpx;
+  bottom: 0;
+  right: 0;
+  opacity: 0.9;
+  background-color: #fff;
+}
+#teacher-features .class-features .item-block .item .nav-name.data-v-081d8c74::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100rpx;
+  height: 1px;
+  bottom: 0;
+  right: 0;
+  opacity: 0.7;
+  background-color: #fff;
+}

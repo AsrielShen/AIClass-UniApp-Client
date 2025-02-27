@@ -1,0 +1,1 @@
+{"version":3,"file":"create-course.js","sources":["../../../../../Program Files/HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvY291cnNlcy9jcmVhdGUtY291cnNlLnZ1ZQ"],"sourcesContent":["import MiniProgramPage from 'C:/Users/19253/Desktop/AI-UniApp/ClientUniApp/pages/courses/create-course.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;AACA,GAAG,WAAW,eAAe;"}

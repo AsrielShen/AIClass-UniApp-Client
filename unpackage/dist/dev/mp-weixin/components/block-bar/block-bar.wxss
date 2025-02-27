@@ -1,0 +1,15 @@
+.block-bar.data-v-7ddac726 {
+  height: 75rpx;
+  line-height: 75rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #cbcbcb;
+}
+.block-bar.data-v-7ddac726::before {
+  content: '';
+  /* 必须添加 content 属性才能显示伪元素 */
+  width: 10rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+  background-color: #39c5bb;
+}

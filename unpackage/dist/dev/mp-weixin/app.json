@@ -1,9 +1,20 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/courses/courses",
+    "pages/courses/enter-course",
+    "pages/courses/create-course",
+    "pages/courses/join-course",
+    "pages/courses/manage-course",
+    "pages/ai/ai-help",
     "pages/user/user",
-    "pages/ai/ai-help"
+    "pages/teacher/features",
+    "pages/teacher/sign-in",
+    "pages/teacher/random-call",
+    "pages/teacher/homework/homework-list",
+    "pages/teacher/test/test-list",
+    "pages/student/features",
+    "pages/student/homework-list",
+    "pages/student/test-list"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -23,7 +34,7 @@
       },
       {
         "text": "课堂",
-        "pagePath": "pages/courses/courses",
+        "pagePath": "pages/courses/enter-course",
         "iconPath": "/static/tabBar-icon/courses.png",
         "selectedIconPath": "/static/tabBar-icon/courses-h.png"
       },

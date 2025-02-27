@@ -1,0 +1,1 @@
+<view id="random-call"><view class="random-block"><block-bar wx:if="{{a}}" u-i="4af155d1-0" bind:__l="__l" u-p="{{a}}"/><view class="random-action"><view class="action-name"> 随机点名 </view><button class="action-button"> 点名 </button></view></view></view>

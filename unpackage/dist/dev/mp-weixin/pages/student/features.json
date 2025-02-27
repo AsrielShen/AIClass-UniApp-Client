@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "AI课堂小程序",
+  "navigationBarTitleText": "课堂教学",
   "usingComponents": {
     "block-bar": "../../components/block-bar/block-bar"
   }
