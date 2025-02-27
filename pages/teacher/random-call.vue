@@ -11,8 +11,7 @@
 				</button>
 			</view>
 		</view>
-		
-		<view class="pop-up" v-show="isShow" @click="cancelShow">
+		<view class="pop-up" v-if="isShow" @click="cancelShow">
 			<view class="pop-block">
 				<view class="pop-title">
 					点名结果
@@ -22,8 +21,8 @@
 					<view>姓名：姚珅</view>
 				</view>
 				<view class="pop-action">
-					<button class="button" @click="">加分</button>
-					<button class="button" @click="absence">缺勤</button>
+					<button class="button" @click="pointSubmit">加分</button>
+					<button class="button" @click="absenceSubmit">缺勤</button>
 				</view>
 			</view>
 		</view>

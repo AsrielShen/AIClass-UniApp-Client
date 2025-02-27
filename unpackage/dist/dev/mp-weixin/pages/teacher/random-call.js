@@ -18,18 +18,24 @@ const _sfc_main = {
     const randomCall = () => {
       isShow.value = true;
     };
+    const pointSubmit = () => {
+      cancelShow();
+    };
+    const absenceSubmit = () => {
+      cancelShow();
+    };
     return (_ctx, _cache) => {
-      return {
+      return common_vendor.e({
         a: common_vendor.p({
           title: "随机点名"
         }),
         b: common_vendor.o(randomCall),
-        c: common_vendor.o(() => {
-        }),
-        d: common_vendor.o((...args) => _ctx.absence && _ctx.absence(...args)),
-        e: isShow.value,
+        c: isShow.value
+      }, isShow.value ? {
+        d: common_vendor.o(pointSubmit),
+        e: common_vendor.o(absenceSubmit),
         f: common_vendor.o(cancelShow)
-      };
+      } : {});
     };
   }
 };
