@@ -82,13 +82,12 @@
 		border-bottom: 1rpx solid #cbcbcb;
 		background-color: #fff;
 		.resource-box {
-			margin: 30rpx 0;
-			display: flex;           /* 设置为 Flexbox 布局 */
-			justify-content: space-around;
-			flex-wrap: wrap;         /* 自动换行 */
-			gap: 10rpx;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
 			.item{
 				position: relative;
+				margin: 20rpx;
 				width: 300rpx;
 				height: 200rpx;
 				.pic{
