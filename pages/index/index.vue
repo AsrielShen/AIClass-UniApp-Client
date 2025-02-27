@@ -86,7 +86,7 @@
 			display: flex;           /* 设置为 Flexbox 布局 */
 			justify-content: space-around;
 			flex-wrap: wrap;         /* 自动换行 */
-			gap: 10px;
+			gap: 10rpx;
 			.item{
 				position: relative;
 				width: 300rpx;
