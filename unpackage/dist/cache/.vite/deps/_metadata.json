@@ -1,8 +1,15 @@
 {
-  "hash": "b6a9c41b",
+  "hash": "a506d380",
   "configHash": "c06da0c2",
-  "lockfileHash": "e3b0c442",
-  "browserHash": "6b2fc3bd",
-  "optimized": {},
+  "lockfileHash": "cc47e015",
+  "browserHash": "a3849382",
+  "optimized": {
+    "markdown-it": {
+      "src": "../../../../../node_modules/markdown-it/index.mjs",
+      "file": "markdown-it.js",
+      "fileHash": "5f40b050",
+      "needsInterop": false
+    }
+  },
   "chunks": {}
 }

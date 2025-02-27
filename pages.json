@@ -4,14 +4,42 @@
 			"path": "pages/index/index",
 			"style": 
 			{
-				"navigationBarTitleText": "AI课程小程序"
+				"navigationBarTitleText": "AI课堂小程序"
 			}
 		},
 		{
-			"path" : "pages/courses/courses",
+			"path" : "pages/courses/enter-course",
 			"style" : 
 			{
 				"navigationBarTitleText" : "课程中心"
+			}
+		},
+		{
+			"path" : "pages/courses/create-course",
+			"style" : 
+			{
+				"navigationBarTitleText" : "创建课程"
+			}
+		},
+		{
+			"path" : "pages/courses/join-course",
+			"style" : 
+			{
+				"navigationBarTitleText" : "加入课程"
+			}
+		},
+		{
+			"path" : "pages/courses/manage-course",
+			"style" : 
+			{
+				"navigationBarTitleText" : "课程管理"
+			}
+		},
+		{
+			"path" : "pages/ai/ai-help",
+			"style" : 
+			{
+				"navigationBarTitleText" : "AI助手"
 			}
 		},
 		{
@@ -21,13 +49,66 @@
 				"navigationBarTitleText" : "用户中心"
 			}
 		},
+		// teacher
 		{
-			"path" : "pages/ai/ai-help",
+			"path" : "pages/teacher/features",
 			"style" : 
 			{
-				"navigationBarTitleText" : "AI助手"
+				"navigationBarTitleText" : "课堂教学"
+			}
+		},
+		{
+			"path" : "pages/teacher/sign-in",
+			"style" : 
+			{
+				"navigationBarTitleText" : "课堂签到"
+			}
+		},
+		{
+			"path" : "pages/teacher/random-call",
+			"style" : 
+			{
+				"navigationBarTitleText" : "随机点名"
+			}
+		},
+		{
+			"path" : "pages/teacher/homework/homework-list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "作业列表"
+			}
+		},
+		{
+			"path" : "pages/teacher/test/test-list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "课堂练习"
+			}
+		},
+		// student
+		{
+			"path" : "pages/student/features",
+			"style" : 
+			{
+				"navigationBarTitleText" : "课堂教学"
+			}
+		},
+		{
+			"path" : "pages/student/homework-list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "作业列表"
+			}
+		},
+		{
+			"path" : "pages/student/test-list",
+			"style" : 
+			{
+				"navigationBarTitleText" : "课堂练习"
 			}
 		}
+		
+		
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -47,7 +128,7 @@
 			},
 			{
 				"text": "课堂",
-				"pagePath": "pages/courses/courses",
+				"pagePath": "pages/courses/enter-course",
 				"iconPath": "/static/tabBar-icon/courses.png",
 				"selectedIconPath": "/static/tabBar-icon/courses-h.png"
 			},

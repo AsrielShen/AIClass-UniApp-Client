@@ -1,6 +1,6 @@
 <template>
 	<view>
-		222
+		随机点名
 	</view>
 </template>
 
