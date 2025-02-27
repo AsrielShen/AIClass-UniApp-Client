@@ -9,7 +9,7 @@
 				<image class="pic" src="/static/main-icon/create-course.png"></image>
 				<view class="text">申请课程</view>
 			</navigator>
-			<navigator class="item">
+			<navigator class="item" url="/pages/teacher/features">
 				<image class="pic" src="/static/main-icon/enter-course.png"></image>
 				<view class="text">进入课程</view>
 			</navigator>
