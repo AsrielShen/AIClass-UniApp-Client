@@ -20,9 +20,7 @@
 		</view>
 		
 		<view class="more-resource">
-			<view class="bar">
-				更多资源
-			</view>
+			<block-bar title="更多资源" />
 			<view class="resource-box">
 				<navigator class="item">
 					<image class="pic" src="/static/more-resources/os.png"/>
@@ -48,7 +46,7 @@
 </template>
 
 <script setup>
-
+// import BlockBar from './components/BlockBar.vue'
 	
 </script>
 
@@ -83,20 +81,6 @@
 		padding: 0 30rpx;
 		border-bottom: 1rpx solid #cbcbcb;
 		background-color: #fff;
-		.bar {
-			height: 75rpx;
-			line-height: 75rpx;
-			display: flex;
-			align-items: center;
-			border-bottom: 1rpx solid #cbcbcb;
-			&::before {
-				content: '';  /* 必须添加 content 属性才能显示伪元素 */
-				width: 10rpx;
-				height: 30rpx;
-				margin-right: 10rpx;
-				background-color: #39c5bb;
-			}
-		}
 		.resource-box {
 			margin: 30rpx 0;
 			display: flex;           /* 设置为 Flexbox 布局 */
