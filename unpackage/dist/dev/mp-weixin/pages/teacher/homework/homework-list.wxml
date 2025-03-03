@@ -1,1 +1,1 @@
-<view class="data-v-e95597b5" id="homework-teacher"></view>
+<view id="homework-teacher" class="bg-color data-v-e95597b5"><view class="homework-block func-block data-v-e95597b5"><block-bar wx:if="{{a}}" class="data-v-e95597b5" u-i="e95597b5-0" bind:__l="__l" u-p="{{a}}"/></view></view>

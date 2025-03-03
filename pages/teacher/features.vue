@@ -1,6 +1,6 @@
 <template>
-	<view id="teacher-features">
-		<view class="class-features">
+	<view id="teacher-features" class="bg-color">
+		<view class="class-features func-block">
 			<block-bar title="课堂功能" />
 			<view class="item-block">
 				<navigator class="item" v-for="(item,index) in list" :key="index" 
@@ -36,17 +36,7 @@ const list = [
 
 <style lang="less" scoped>
 #teacher-features {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #F6F6F6;
 	.class-features {
-		padding: 0 30rpx;
-		border-bottom: 1rpx solid #cbcbcb;
-		background-color: #fff;
-		
 		.item-block {
 			display: flex;
 			justify-content: center;

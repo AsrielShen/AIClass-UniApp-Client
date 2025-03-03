@@ -1,5 +1,5 @@
 <template>
-	<view id="index">
+	<view id="index" class="bg-color">
 		<view class="main-func">
 			<navigator class="item">
 				<image class="pic" src="/static/main-icon/create-course.png"></image>
@@ -19,7 +19,7 @@
 			</navigator>
 		</view>
 		
-		<view class="more-resource">
+		<view class="more-resource" class="func-block">
 			<block-bar title="更多资源" />
 			<view class="resource-box">
 				<navigator class="item">
@@ -52,12 +52,6 @@
 
 <style lang="less" scoped>
 #index{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #F6F6F6;
 	.main-func {
 		height: 230rpx;
 		background-color: #fff;
@@ -78,9 +72,6 @@
 		}
 	}
 	.more-resource {
-		padding: 0 30rpx;
-		border-bottom: 1rpx solid #cbcbcb;
-		background-color: #fff;
 		.resource-box {
 			display: flex;
 			justify-content: center;

@@ -1,5 +1,5 @@
 <template>
-	<view id="user">
+	<view id="user" class="bg-color">
 		<view class="user-info">
 			<view class="upper">
 				<image class="avatar" src="/static/avatar-default.png" /> 
@@ -69,12 +69,6 @@
 
 <style lang="less" scoped>
 #user{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #F6F6F6;
 	.user-info {
 		margin: 30rpx 0;
 		padding: 30rpx;
