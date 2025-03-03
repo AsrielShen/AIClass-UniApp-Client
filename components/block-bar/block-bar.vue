@@ -17,18 +17,18 @@ const props = defineProps({
 
 <style lang="less" scoped>
 .block-bar {
-	height: 75rpx;
-	line-height: 75rpx;
+	height: 100rpx;
+	line-height: 100rpx;
 	display: flex;
 	align-items: center;
 	border-bottom: 1rpx solid #cbcbcb;
 	color: #3f3f3f;
-	font-size: 36rpx;
+	font-size: 40rpx;
 	font-weight: bold;
 	&::before {
 		content: '';  /* 必须添加 content 属性才能显示伪元素 */
-		width: 10rpx;
-		height: 30rpx;
+		width: 12rpx;
+		height: 40rpx;
 		margin-right: 20rpx;
 		background-color: #39c5bb;
 	}
