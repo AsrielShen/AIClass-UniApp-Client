@@ -1,6 +1,6 @@
 <template>
-	<view id="random-call">
-		<view class="random-block">
+	<view id="random-call" class="bg-color">
+		<view class="random-block func-block">
 			<block-bar title="随机点名" />
 			<view class="random-action">
 				<view class="action-name">
@@ -19,7 +19,6 @@
 				<view class="pop-content">
 					<view>学号：{{ studentId }}</view>
 					<view>姓名：{{ studentName }}</view>
-
 				</view>
 				<view class="pop-action">
 					<button class="button" @click="pointSubmit">加分</button>
@@ -47,11 +46,9 @@ const randomCall = () => {
 		method: 'GET',
 		success: (res) => {
 			if (res.statusCode === 200) {
-				
-				const studentinf = res.data;
-				studentName.value = studentinf.name;
-				studentId.value = studentinf.studentId;
-
+				const studentInfo = res.data;
+				studentName.value = studentInfo.name;
+				studentId.value = studentInfo.studentId;
 				isShow.value = true;
 			} else {
 				uni.showToast({
@@ -87,7 +84,7 @@ const pointSubmit = () => {
 			});
 		}
 	})
-	cancelShow();
+	// cancelShow();
 }
 
 const absenceSubmit = () => {
@@ -108,7 +105,7 @@ const absenceSubmit = () => {
 			});
 		}
 	})
-	cancelShow();
+	// cancelShow();
 }
 </script>
 
@@ -116,16 +113,7 @@ const absenceSubmit = () => {
 
 <style lang="less">
 #random-call {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #F6F6F6;
 	.random-block {
-		padding: 0 30rpx;
-		border-bottom: 1rpx solid #cbcbcb;
-		background-color: #fff;
 		.random-action {
 			margin: 20rpx 0;
 			display: flex;
