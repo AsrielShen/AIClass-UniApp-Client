@@ -82,6 +82,7 @@ const pointSubmit = () => {
 				title:'加分失败，请重试',
 				icon:'fail'
 			});
+			cancelShow();
 		}
 	})
 	// cancelShow();
@@ -103,6 +104,7 @@ const absenceSubmit = () => {
 				title:'记录失败，请重试',
 				icon:'ERROR'
 			});
+			cancelShow();
 		}
 	})
 	// cancelShow();
