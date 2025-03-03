@@ -1,16 +1,3 @@
-#student-features.data-v-4a367c74 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #F6F6F6;
-}
-#student-features .class-features.data-v-4a367c74 {
-  padding: 0 30rpx;
-  border-bottom: 1rpx solid #cbcbcb;
-  background-color: #fff;
-}
 #student-features .class-features .item-block.data-v-4a367c74 {
   display: flex;
   justify-content: center;

@@ -1,6 +1,6 @@
 <template>
 	<view id="student-features" class="bg-color">
-		<view class="class-features" class="func-block">
+		<view class="class-features func-block">
 			<block-bar title="课堂功能" />
 			<view class="item-block">
 				<navigator class="item" v-for="(item,index) in list" :key="index" 

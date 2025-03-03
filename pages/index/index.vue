@@ -19,7 +19,7 @@
 			</navigator>
 		</view>
 		
-		<view class="more-resource" class="func-block">
+		<view class="more-resource func-block">
 			<block-bar title="更多资源" />
 			<view class="resource-box">
 				<navigator class="item">
