@@ -1,8 +1,9 @@
 <template>
 	<view id="test-teacher" class="bg-color">
-		<view class="test-block">
-			<navigator class="test-item" v-for="index in 4" :key="index">
-				<view class="test-header">
+		<view class="item-block">
+			<block-bar class="block-bar" title="课堂练习" />
+			<navigator class="item" v-for="index in 4" :key="index">
+				<view class="header">
 					<view class="title">第一次作业</view>
 					<view class="dead-line">截止时间：2025.3.3</view>
 					<view class="more-btn">
@@ -23,15 +24,19 @@
 
 <style lang="less" scoped>
 #test-teacher {
-	.test-block {
+	.item-block {
 		display: flex;
 		flex-direction: column;
-		.test-item {
+		.block-bar {
+			padding: 0 30rpx;
+			background-color: #fff;
+		}
+		.item {
 			margin: 10rpx 0;
 			padding: 30rpx;
 			box-sizing: border-box;
 			background-color: #fff;
-			.test-header {
+			.header {
 				position: relative;
 				.title {
 					font-size: 36rpx;

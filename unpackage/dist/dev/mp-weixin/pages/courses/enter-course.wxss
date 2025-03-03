@@ -1,0 +1,33 @@
+#enter-course .item-block.data-v-e8ca19df {
+  display: flex;
+  flex-direction: column;
+}
+#enter-course .item-block .block-bar.data-v-e8ca19df {
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+#enter-course .item-block .item.data-v-e8ca19df {
+  margin: 10rpx 0;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+#enter-course .item-block .item .header.data-v-e8ca19df {
+  position: relative;
+}
+#enter-course .item-block .item .header .title.data-v-e8ca19df {
+  font-size: 36rpx;
+  margin: 15rpx 0;
+}
+#enter-course .item-block .item .header .dead-line.data-v-e8ca19df {
+  color: #8d8d8d;
+}
+#enter-course .item-block .item .header .more-btn.data-v-e8ca19df {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #8d8d8d;
+}

@@ -1,24 +1,28 @@
-#test-teacher .test-block.data-v-609fe5df {
+#test-teacher .item-block.data-v-609fe5df {
   display: flex;
   flex-direction: column;
 }
-#test-teacher .test-block .test-item.data-v-609fe5df {
+#test-teacher .item-block .block-bar.data-v-609fe5df {
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+#test-teacher .item-block .item.data-v-609fe5df {
   margin: 10rpx 0;
   padding: 30rpx;
   box-sizing: border-box;
   background-color: #fff;
 }
-#test-teacher .test-block .test-item .test-header.data-v-609fe5df {
+#test-teacher .item-block .item .header.data-v-609fe5df {
   position: relative;
 }
-#test-teacher .test-block .test-item .test-header .title.data-v-609fe5df {
+#test-teacher .item-block .item .header .title.data-v-609fe5df {
   font-size: 36rpx;
   margin: 15rpx 0;
 }
-#test-teacher .test-block .test-item .test-header .dead-line.data-v-609fe5df {
+#test-teacher .item-block .item .header .dead-line.data-v-609fe5df {
   color: #8d8d8d;
 }
-#test-teacher .test-block .test-item .test-header .more-btn.data-v-609fe5df {
+#test-teacher .item-block .item .header .more-btn.data-v-609fe5df {
   display: flex;
   align-items: center;
   position: absolute;

@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "课程中心",
-  "usingComponents": {}
+  "usingComponents": {
+    "block-bar": "../../components/block-bar/block-bar"
+  }
 }

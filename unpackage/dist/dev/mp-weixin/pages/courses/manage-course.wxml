@@ -1,1 +1,1 @@
-<view></view>
+<view id="enter-course" class="bg-color data-v-aedc780b"><view class="item-block data-v-aedc780b"><block-bar wx:if="{{a}}" class="block-bar data-v-aedc780b" u-i="aedc780b-0" bind:__l="__l" u-p="{{a}}"/><navigator wx:for="{{b}}" wx:for-item="index" wx:for-index="i0" wx:key="a" class="item data-v-aedc780b"><view class="header data-v-aedc780b"><view class="title data-v-aedc780b">算法</view><view class="dead-line data-v-aedc780b">授课老师：张德福</view><view class="more-btn data-v-aedc780b"> > </view></view></navigator></view></view>

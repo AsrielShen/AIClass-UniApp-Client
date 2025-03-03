@@ -13,7 +13,7 @@
 				<image class="pic" src="/static/main-icon/enter-course.png"></image>
 				<view class="text">进入课程</view>
 			</navigator>
-			<navigator class="item">
+			<navigator class="item" url="/pages/courses/manage-course">
 				<image class="pic" src="/static/main-icon/enter-course.png"></image>
 				<view class="text">管理课程</view>
 			</navigator>
