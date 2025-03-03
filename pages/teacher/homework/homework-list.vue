@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view id="homework-teacher">
 		
 	</view>
 </template>
@@ -8,6 +8,9 @@
 	
 </script>
 
-<style>
+<style lang="less" scoped>
+#homework-teacher {
+	
+}
 	       
 </style>
