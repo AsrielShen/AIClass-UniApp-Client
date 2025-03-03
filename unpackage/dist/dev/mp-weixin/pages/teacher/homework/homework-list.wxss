@@ -1,0 +1,43 @@
+#homework-teacher .homework-block.data-v-e95597b5 {
+  display: flex;
+  flex-direction: column;
+}
+#homework-teacher .homework-block .homework-item.data-v-e95597b5 {
+  margin: 10rpx 0;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+#homework-teacher .homework-block .homework-item .homework-header.data-v-e95597b5 {
+  position: relative;
+}
+#homework-teacher .homework-block .homework-item .homework-header .title.data-v-e95597b5 {
+  font-size: 36rpx;
+  margin: 15rpx 0;
+}
+#homework-teacher .homework-block .homework-item .homework-header .dead-line.data-v-e95597b5 {
+  color: #8d8d8d;
+}
+#homework-teacher .homework-block .homework-item .homework-header .more-btn.data-v-e95597b5 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #8d8d8d;
+}
+#homework-teacher .icon-add.data-v-e95597b5 {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #39c5bb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 50rpx bolder;
+  color: #fff;
+  position: fixed;
+  right: 30rpx;
+  bottom: 200rpx;
+}

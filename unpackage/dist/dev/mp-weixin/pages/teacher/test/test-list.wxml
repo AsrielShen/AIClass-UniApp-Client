@@ -1,1 +1,1 @@
-<view></view>
+<view id="test-teacher" class="bg-color data-v-609fe5df"><view class="test-block data-v-609fe5df"><navigator wx:for="{{a}}" wx:for-item="index" wx:for-index="i0" wx:key="a" class="test-item data-v-609fe5df"><view class="test-header data-v-609fe5df"><view class="title data-v-609fe5df">第一次作业</view><view class="dead-line data-v-609fe5df">截止时间：2025.3.3</view><view class="more-btn data-v-609fe5df"> > </view></view></navigator></view><navigator class="icon-add data-v-609fe5df"> + </navigator></view>
