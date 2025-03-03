@@ -1,6 +1,6 @@
 <template>
-	<view id="random-call" class="bg-color">
-		<view class="random-block func-block">
+	<view id="random-call">
+		<view class="random-block">
 			<block-bar title="随机点名" />
 			<view class="random-action">
 				<view class="action-name">
@@ -17,8 +17,9 @@
 					点名结果
 				</view>
 				<view class="pop-content">
-					<view>学号：22920212204274</view>
-					<view>姓名：姚珅</view>
+					<view>学号：{{ studentId }}</view>
+					<view>姓名：{{ studentName }}</view>
+
 				</view>
 				<view class="pop-action">
 					<button class="button" @click="pointSubmit">加分</button>
@@ -33,29 +34,98 @@
 import { ref } from 'vue'
 
 const isShow = ref(false);
+const studentId = ref('');
+const studentName = ref('');
 
-const cancelShow = ()=> {
+const cancelShow = () => {
 	isShow.value = false;
 }
 
-const randomCall = ()=> {
-	isShow.value = true;
+const randomCall = () => {
+	uni.request({
+		url: 'http://127.0.0.1:1234/api/absence/random', // 接口地址
+		method: 'GET',
+		success: (res) => {
+			if (res.statusCode === 200) {
+				
+				const studentinf = res.data;
+				studentName.value = studentinf.name;
+				studentId.value = studentinf.studentId;
+
+				isShow.value = true;
+			} else {
+				uni.showToast({
+					title: '数据获取失败',
+					icon: 'none'
+				});
+			}
+		},
+		fail: (err) => {
+			uni.showToast({
+				title: '网络请求失败,',
+				icon: 'none'
+			});
+		}
+	});
 }
 
-const pointSubmit = ()=> {
-	
+const pointSubmit = () => {
+	uni.request({
+		url:`http://127.0.0.1:1234/api/absence/mark-score/${studentId.value}`,
+		method:'POST',
+		success: () => {
+			uni.showToast({
+				title:'加分记录成功',
+				icon:'success'
+			});
+			cancelShow();
+		},
+		fail: () => {
+			uni.showToast({
+				title:'加分失败，请重试',
+				icon:'fail'
+			});
+		}
+	})
 	cancelShow();
 }
 
-const absenceSubmit = ()=> {
-	
+const absenceSubmit = () => {
+	uni.request({
+		url:`http://127.0.0.1:1234/api/absence/mark-absence/${studentId.value}`,
+		method:'POST',
+		success: () => {
+			uni.showToast({
+				title:'缺勤记录成功',
+				icon:'success'
+			});
+			cancelShow();
+		},
+		fail: () => {
+			uni.showToast({
+				title:'记录失败，请重试',
+				icon:'ERROR'
+			});
+		}
+	})
 	cancelShow();
 }
 </script>
 
+
+
 <style lang="less">
 #random-call {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #F6F6F6;
 	.random-block {
+		padding: 0 30rpx;
+		border-bottom: 1rpx solid #cbcbcb;
+		background-color: #fff;
 		.random-action {
 			margin: 20rpx 0;
 			display: flex;
