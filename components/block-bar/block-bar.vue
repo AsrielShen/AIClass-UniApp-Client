@@ -22,11 +22,14 @@ const props = defineProps({
 	display: flex;
 	align-items: center;
 	border-bottom: 1rpx solid #cbcbcb;
+	color: #3f3f3f;
+	font-size: 36rpx;
+	font-weight: bold;
 	&::before {
 		content: '';  /* 必须添加 content 属性才能显示伪元素 */
 		width: 10rpx;
 		height: 30rpx;
-		margin-right: 10rpx;
+		margin-right: 20rpx;
 		background-color: #39c5bb;
 	}
 }

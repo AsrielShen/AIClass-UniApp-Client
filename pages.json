@@ -79,6 +79,13 @@
 			}
 		},
 		{
+			"path" : "pages/teacher/homework/add-homework",
+			"style" : 
+			{
+				"navigationBarTitleText" : "发布作业"
+			}
+		}
+		{
 			"path" : "pages/teacher/test/test-list",
 			"style" : 
 			{
@@ -106,7 +113,8 @@
 			{
 				"navigationBarTitleText" : "课堂练习"
 			}
-		}
+		},
+		
 		
 		
 	],
