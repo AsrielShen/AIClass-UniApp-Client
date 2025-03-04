@@ -59,6 +59,7 @@ const _sfc_main = {
             title: "加分失败，请重试",
             icon: "fail"
           });
+          cancelShow();
         }
       });
     };
@@ -78,6 +79,7 @@ const _sfc_main = {
             title: "记录失败，请重试",
             icon: "ERROR"
           });
+          cancelShow();
         }
       });
     };

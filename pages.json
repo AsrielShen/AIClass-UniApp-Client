@@ -84,7 +84,7 @@
 			{
 				"navigationBarTitleText" : "发布作业"
 			}
-		}
+		},
 		{
 			"path" : "pages/teacher/test/test-list",
 			"style" : 
