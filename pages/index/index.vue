@@ -5,7 +5,7 @@
 				<image class="pic" src="/static/main-icon/create-course.png"></image>
 				<view class="text">创建课程</view>
 			</navigator>
-			<navigator class="item">
+			<navigator class="item" url="/pages/courses/join-course">
 				<image class="pic" src="/static/main-icon/create-course.png"></image>
 				<view class="text">申请课程</view>
 			</navigator>

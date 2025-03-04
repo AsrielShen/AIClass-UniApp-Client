@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "加入课程",
-  "usingComponents": {}
+  "usingComponents": {
+    "block-bar": "../../components/block-bar/block-bar"
+  }
 }
