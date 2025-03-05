@@ -1,7 +1,7 @@
 <template>
 	<view id="index" class="bg-color">
 		<view class="main-func">
-			<navigator class="item">
+			<navigator class="item" url="/pages/courses/create-course">
 				<image class="pic" src="/static/main-icon/create-course.png"></image>
 				<view class="text">创建课程</view>
 			</navigator>
