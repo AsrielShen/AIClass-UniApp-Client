@@ -18,7 +18,7 @@ const _sfc_main = {
     const courseNum = common_vendor.ref("");
     const searchFunc = () => {
       isShow.value = true;
-      common_vendor.index.__f__("log", "at pages/courses/join-course.vue:58", courseNum.value);
+      common_vendor.index.__f__("log", "at pages/courses/join-course.vue:57", courseNum.value);
     };
     const joinSubmit = () => {
       courseNum.value = "";

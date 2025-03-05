@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "作业列表",
   "usingComponents": {
-    "block-bar": "../../../components/block-bar/block-bar"
+    "block-bar-other": "../../../components/block-bar-other/block-bar-other"
   }
 }

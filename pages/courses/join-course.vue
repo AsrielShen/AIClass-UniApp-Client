@@ -11,7 +11,6 @@
 					v-model="courseNum" 
 					maxlength="10" 
 					type="text"
-					
 					focus 
 					placeholder="请输入课程码"
 				/>

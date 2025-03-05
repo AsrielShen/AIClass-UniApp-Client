@@ -1,7 +1,7 @@
 <template>
 	<view id="enter-course" class="bg-color">
 		<view class="item-block">
-			<block-bar class="block-bar" title="我的课程" />
+			<block-bar-other title="我的课程" />
 			<navigator class="item" v-for="index in 4" :key="index">
 				<view class="header">
 					<view class="title">算法</view>
@@ -22,12 +22,6 @@
 <style lang="less" scoped>
 #enter-course {
 	.item-block {
-		display: flex;
-		flex-direction: column;
-		.block-bar {
-			padding: 0 30rpx;
-			background-color: #fff;
-		}
 		.item {
 			margin: 10rpx 0;
 			padding: 30rpx;

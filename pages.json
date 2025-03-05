@@ -113,10 +113,7 @@
 			{
 				"navigationBarTitleText" : "课堂练习"
 			}
-		},
-		
-		
-		
+		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -1,7 +1,7 @@
 <template>
 	<view id="test-teacher" class="bg-color">
 		<view class="item-block">
-			<block-bar class="block-bar" title="课堂练习" />
+			<block-bar-other class="block-bar" title="课堂练习" />
 			<navigator class="item" v-for="index in 4" :key="index">
 				<view class="header">
 					<view class="title">第一次作业</view>
@@ -25,12 +25,6 @@
 <style lang="less" scoped>
 #test-teacher {
 	.item-block {
-		display: flex;
-		flex-direction: column;
-		.block-bar {
-			padding: 0 30rpx;
-			background-color: #fff;
-		}
 		.item {
 			margin: 10rpx 0;
 			padding: 30rpx;

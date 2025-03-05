@@ -1,28 +1,20 @@
-#enter-course .item-block.data-v-aedc780b {
-  display: flex;
-  flex-direction: column;
-}
-#enter-course .item-block .block-bar.data-v-aedc780b {
-  padding: 0 30rpx;
-  background-color: #fff;
-}
-#enter-course .item-block .item.data-v-aedc780b {
+#manage-course .item-block .item.data-v-aedc780b {
   margin: 10rpx 0;
   padding: 30rpx;
   box-sizing: border-box;
   background-color: #fff;
 }
-#enter-course .item-block .item .header.data-v-aedc780b {
+#manage-course .item-block .item .header.data-v-aedc780b {
   position: relative;
 }
-#enter-course .item-block .item .header .title.data-v-aedc780b {
+#manage-course .item-block .item .header .title.data-v-aedc780b {
   font-size: 36rpx;
   margin: 15rpx 0;
 }
-#enter-course .item-block .item .header .dead-line.data-v-aedc780b {
+#manage-course .item-block .item .header .dead-line.data-v-aedc780b {
   color: #8d8d8d;
 }
-#enter-course .item-block .item .header .more-btn.data-v-aedc780b {
+#manage-course .item-block .item .header .more-btn.data-v-aedc780b {
   display: flex;
   align-items: center;
   position: absolute;

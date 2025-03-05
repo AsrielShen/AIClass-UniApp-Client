@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "创建课程",
-  "usingComponents": {}
+  "usingComponents": {
+    "block-bar-other": "../../components/block-bar-other/block-bar-other"
+  }
 }
