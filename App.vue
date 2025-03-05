@@ -25,7 +25,7 @@
 	
 .func-block {
 	padding: 0 30rpx;
-	border-bottom: 1rpx solid #cbcbcb;
+	border-bottom: 1rpx solid #ccc;
 	background-color: #fff;
 }
 

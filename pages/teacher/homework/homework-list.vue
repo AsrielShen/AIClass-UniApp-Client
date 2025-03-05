@@ -12,7 +12,7 @@
 				</view>
 			</navigator>
 		</view>
-		<navigator class="icon-add">
+		<navigator class="icon-add" url="/pages/teacher/homework/add-homework">
 			+
 		</navigator>
 	</view>

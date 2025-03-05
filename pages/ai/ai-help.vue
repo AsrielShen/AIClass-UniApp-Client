@@ -86,7 +86,7 @@ const sendMessage = () => {
 				background-color: #fff;
 				padding: 10rpx;
 				border-radius: 8px;
-				border: 1rpx solid #cbcbcb;
+				border: 1rpx solid #ccc;
 			}
 
 			.user-answer {
@@ -94,7 +94,7 @@ const sendMessage = () => {
 				color: white;
 				padding: 10rpx;
 				border-radius: 8px;
-				border: 1rpx solid #34b5aa;
+				border: 1rpx solid #ccc;
 			}
 		}
 	}
@@ -123,11 +123,5 @@ const sendMessage = () => {
 			background-color: #39c5bb;
 		}
 	}
-
-
-
-
-
-
 }
 </style>

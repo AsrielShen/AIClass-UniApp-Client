@@ -14,14 +14,14 @@
   background-color: #fff;
   padding: 10rpx;
   border-radius: 8px;
-  border: 1rpx solid #cbcbcb;
+  border: 1rpx solid #ccc;
 }
 #ai-help .chat-box .chat-item .user-answer.data-v-efcff537 {
   background-color: #39c5bb;
   color: white;
   padding: 10rpx;
   border-radius: 8px;
-  border: 1rpx solid #34b5aa;
+  border: 1rpx solid #ccc;
 }
 #ai-help .input-box.data-v-efcff537 {
   padding: 30rpx;

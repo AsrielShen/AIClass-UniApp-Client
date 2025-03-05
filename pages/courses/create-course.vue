@@ -93,7 +93,7 @@ const formReset = ()=> {
 				display: flex;
 				align-items: center;
 				padding: 20rpx 0;
-				border-bottom: 1rpx solid #cbcbcb;
+				border-bottom: 1rpx solid #ccc;
 				.input-box {
 					flex: 1;
 					margin: 0 20rpx;

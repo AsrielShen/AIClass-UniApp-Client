@@ -2,8 +2,8 @@
   margin: 30rpx 0;
   padding: 30rpx;
   background-color: #fff;
-  border-top: 1rpx solid #cbcbcb;
-  border-bottom: 1rpx solid #cbcbcb;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
 }
 #user .user-info .upper.data-v-0f7520f0 {
   display: flex;
@@ -40,8 +40,8 @@
 #user .func-block .func-item.data-v-0f7520f0 {
   height: 100rpx;
   background-color: #fff;
-  border-top: 1rpx solid #cbcbcb;
-  border-bottom: 1rpx solid #cbcbcb;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
   padding: 0 30rpx;
   display: flex;
   align-items: center;
@@ -61,5 +61,5 @@
   margin-left: auto;
   /* 让箭头靠右 */
   font-size: 70rpx;
-  color: #cbcbcb;
+  color: #ccc;
 }

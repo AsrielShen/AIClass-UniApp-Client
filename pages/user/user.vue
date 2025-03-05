@@ -73,8 +73,8 @@
 		margin: 30rpx 0;
 		padding: 30rpx;
 		background-color: #fff;
-		border-top: 1rpx solid #cbcbcb;
-		border-bottom: 1rpx solid #cbcbcb;
+		border-top: 1rpx solid #ccc;
+		border-bottom: 1rpx solid #ccc;
 		.upper{
 			display: flex;
 			margin-bottom: 40rpx;
@@ -112,8 +112,8 @@
 		.func-item{
 			height: 100rpx;
 			background-color: #fff;
-			border-top: 1rpx solid #cbcbcb;
-			border-bottom: 1rpx solid #cbcbcb;
+			border-top: 1rpx solid #ccc;
+			border-bottom: 1rpx solid #ccc;
 			padding: 0 30rpx;
 			
 			display: flex;
@@ -132,7 +132,7 @@
 				content: '›'; /* 右箭头符号 */
 				margin-left: auto; /* 让箭头靠右 */
 				font-size: 70rpx;
-				color: #cbcbcb;
+				color: #ccc;
 		  }
 		}
 	}
