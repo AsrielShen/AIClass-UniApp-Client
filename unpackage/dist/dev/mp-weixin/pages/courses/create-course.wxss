@@ -13,6 +13,19 @@
   flex: 1;
   margin: 0 20rpx;
 }
+#create-course .create-block .action-block .detail-block.data-v-2afda07d {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+#create-course .create-block .action-block .detail-block .large-textarea.data-v-2afda07d {
+  width: 100%;
+  min-height: 250rpx;
+  margin: 20rpx 0;
+  padding: 20rpx 15rpx;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+}
 #create-course .create-block .action-block .tip-block.data-v-2afda07d {
   border: 0;
   font-size: 24rpx;

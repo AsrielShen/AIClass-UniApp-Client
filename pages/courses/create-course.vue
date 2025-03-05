@@ -24,6 +24,18 @@
 							placeholder="请输入课程名"
 						/>
 					</view>
+					<view class="detail-block">
+						<view class="title">
+							课程描述
+						</view>
+						<textarea 
+							class="large-textarea" 
+							type="text"
+							auto-height
+							disable-default-padding
+							placeholder="请输入描述信息"
+						/>
+					</view>
 					<view class="action-item tip-block">
 						提示：这里是小提示
 					</view>
@@ -85,6 +97,19 @@ const formReset = ()=> {
 				.input-box {
 					flex: 1;
 					margin: 0 20rpx;
+				}
+			}
+			.detail-block {
+				padding: 20rpx 0;
+				border-bottom: 1rpx solid #ccc;
+				.large-textarea {
+					width: 100%;
+					min-height: 250rpx;
+					margin: 20rpx 0;
+					padding: 20rpx 15rpx;
+					box-sizing: border-box;
+					border: 1px solid #ccc;
+					border-radius: 10rpx;
 				}
 			}
 			.tip-block {

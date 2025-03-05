@@ -13,6 +13,7 @@ if (!Math) {
   "./pages/teacher/sign-in.js";
   "./pages/teacher/random-call.js";
   "./pages/teacher/homework/homework-list.js";
+  "./pages/teacher/homework/homework-detail.js";
   "./pages/teacher/homework/add-homework.js";
   "./pages/teacher/test/test-list.js";
   "./pages/student/features.js";

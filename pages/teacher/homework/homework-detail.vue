@@ -1,7 +1,7 @@
 <template>
-	<view id="add-homework" class="bg-color">
+	<view id="homework-detail" class="bg-color">
 		<view class="create-block">
-			<block-bar-other title="发布作业" />
+			<block-bar-other title="作业管理" />
 			<view class="action-block">
 				<view class="action-item">
 					<view class="title">
@@ -51,7 +51,7 @@
 </script>
 
 <style lang="less" scoped>
-#add-homework {
+#homework-detail {
 	.create-block {
 		.action-block {
 			margin: 20rpx 0;

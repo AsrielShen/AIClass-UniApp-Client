@@ -1,0 +1,48 @@
+#add-homework .create-block .action-block.data-v-7b6106a8 {
+  margin: 20rpx 0;
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+#add-homework .create-block .action-block .action-item.data-v-7b6106a8 {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+#add-homework .create-block .action-block .action-item .title.data-v-7b6106a8 {
+  width: 150rpx;
+}
+#add-homework .create-block .action-block .action-item .input-box.data-v-7b6106a8 {
+  flex: 1;
+}
+#add-homework .create-block .action-block .detail-block.data-v-7b6106a8 {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+#add-homework .create-block .action-block .detail-block .large-textarea.data-v-7b6106a8 {
+  width: 100%;
+  min-height: 250rpx;
+  margin: 20rpx 0;
+  padding: 20rpx 15rpx;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+}
+#add-homework .create-block .action-block .tip-block.data-v-7b6106a8 {
+  border: 0;
+  font-size: 24rpx;
+  color: gray;
+}
+#add-homework .create-block .action-block .button.data-v-7b6106a8 {
+  font-size: 32rpx;
+  margin: 20rpx 0;
+  border-radius: 50rpx;
+  color: #fff;
+  background-color: #39c5bb;
+  border: none;
+}
+#add-homework .create-block .action-block .red.data-v-7b6106a8 {
+  color: red;
+  border: 1rpx solid red;
+  background-color: #fff;
+}

@@ -11,6 +11,7 @@
     "pages/teacher/sign-in",
     "pages/teacher/random-call",
     "pages/teacher/homework/homework-list",
+    "pages/teacher/homework/homework-detail",
     "pages/teacher/homework/add-homework",
     "pages/teacher/test/test-list",
     "pages/student/features",

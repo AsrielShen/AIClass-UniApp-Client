@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "发布作业",
+  "navigationBarTitleText": "作业详情",
   "usingComponents": {
     "block-bar-other": "../../../components/block-bar-other/block-bar-other"
   }

@@ -8,6 +8,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/teacher/homework/homework-detail",
+          "pathName": "pages/teacher/homework/homework-detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/teacher/random-call",
           "pathName": "pages/teacher/random-call",
           "query": "",

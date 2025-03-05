@@ -1,0 +1,48 @@
+#homework-detail .create-block .action-block.data-v-b88f6e25 {
+  margin: 20rpx 0;
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+#homework-detail .create-block .action-block .action-item.data-v-b88f6e25 {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+#homework-detail .create-block .action-block .action-item .title.data-v-b88f6e25 {
+  width: 150rpx;
+}
+#homework-detail .create-block .action-block .action-item .input-box.data-v-b88f6e25 {
+  flex: 1;
+}
+#homework-detail .create-block .action-block .detail-block.data-v-b88f6e25 {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+#homework-detail .create-block .action-block .detail-block .large-textarea.data-v-b88f6e25 {
+  width: 100%;
+  min-height: 250rpx;
+  margin: 20rpx 0;
+  padding: 20rpx 15rpx;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+}
+#homework-detail .create-block .action-block .tip-block.data-v-b88f6e25 {
+  border: 0;
+  font-size: 24rpx;
+  color: gray;
+}
+#homework-detail .create-block .action-block .button.data-v-b88f6e25 {
+  font-size: 32rpx;
+  margin: 20rpx 0;
+  border-radius: 50rpx;
+  color: #fff;
+  background-color: #39c5bb;
+  border: none;
+}
+#homework-detail .create-block .action-block .red.data-v-b88f6e25 {
+  color: red;
+  border: 1rpx solid red;
+  background-color: #fff;
+}

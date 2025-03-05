@@ -19,10 +19,10 @@ const _sfc_main = {
       isShow.value = false;
     };
     const formSubmit = () => {
-      common_vendor.index.__f__("log", "at pages/courses/create-course.vue:65", "here is submit");
+      common_vendor.index.__f__("log", "at pages/courses/create-course.vue:77", "here is submit");
     };
     const formReset = () => {
-      common_vendor.index.__f__("log", "at pages/courses/create-course.vue:68", "here is reset");
+      common_vendor.index.__f__("log", "at pages/courses/create-course.vue:80", "here is reset");
     };
     return (_ctx, _cache) => {
       return common_vendor.e({

@@ -12,10 +12,10 @@ if (!Math) {
 function _sfc_render(_ctx, _cache) {
   return {
     a: common_vendor.p({
-      title: "发布作业"
+      title: "作业管理"
     })
   };
 }
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-7b6106a8"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-b88f6e25"]]);
 wx.createPage(MiniProgramPage);
-//# sourceMappingURL=../../../../.sourcemap/mp-weixin/pages/teacher/homework/add-homework.js.map
+//# sourceMappingURL=../../../../.sourcemap/mp-weixin/pages/teacher/homework/homework-detail.js.map

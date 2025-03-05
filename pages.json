@@ -79,6 +79,13 @@
 			}
 		},
 		{
+			"path" : "pages/teacher/homework/homework-detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "作业详情"
+			}
+		},
+		{
 			"path" : "pages/teacher/homework/add-homework",
 			"style" : 
 			{
