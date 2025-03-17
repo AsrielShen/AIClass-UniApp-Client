@@ -1,7 +1,7 @@
 <template>
 	<view id="register" class="bg-color">
 		<view class="register-block">
-			<block-bar-other title="用户登录" />
+			<block-bar-other title="用户注册" />
 			<view class="action-block">
 				<view class="action-item">
 					<view class="title">用户学号</view>

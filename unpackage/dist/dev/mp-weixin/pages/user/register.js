@@ -12,7 +12,7 @@ if (!Math) {
 function _sfc_render(_ctx, _cache) {
   return {
     a: common_vendor.p({
-      title: "用户登录"
+      title: "用户注册"
     }),
     b: _ctx.gender === "male",
     c: _ctx.gender === "female",
