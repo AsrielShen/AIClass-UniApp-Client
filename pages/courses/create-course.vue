@@ -118,48 +118,5 @@ const formReset = ()=> {
 		}
 	}
 	
-	.pop-up {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: rgba(0, 0, 0, 0.5);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		.pop-block {
-			width: 80%;
-			box-sizing: border-box;
-			padding: 30rpx;
-			border-radius: 10rpx;
-			background: white;
-			font-size: 28rpx;
-			text-align: center;
-			.pop-content {
-				margin: 30rpx 0;
-				padding: 30rpx;
-				background-color: #F6F6F6;
-			}
-			.pop-action {
-				display: flex;
-				justify-content: center;
-				.button {
-					font-size: 28rpx;
-					width: 200rpx;
-					margin: 0 50rpx;
-					border-radius: 25rpx;
-					color: red;
-					border: 1rpx solid red;
-					background-color: #fff;
-					&:first-child {
-						color: #fff;
-						background-color: #39c5bb;
-						border: none
-					}
-				}
-			}
-		}
-	}
 }
 </style>
