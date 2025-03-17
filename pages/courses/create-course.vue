@@ -44,21 +44,6 @@
 				</form>
 			</view>
 		</view>
-		<view class="pop-up" v-if="isShow" @click="cancelShow">
-			<view class="pop-block">
-				<view class="pop-title">
-					请确认信息
-				</view>
-				<view class="pop-content">
-					<view>课程名：</view>
-					<view>老师：</view>
-				</view>
-				<view class="pop-action">
-					<button class="button" @click="formSubmit">创建</button>
-					<button class="button" @click="cancelShow">取消</button>
-				</view>
-			</view>
-		</view>
 	</view>
 </template>
 
