@@ -16,10 +16,16 @@
 }
 #register .register-block .action-block .action-item .radio-box.data-v-fd534bf9 {
   flex: 1;
+  font-size: 32rpx;
   margin: 0 20rpx;
 }
 #register .register-block .action-block .action-item .radio-box .radio-item.data-v-fd534bf9 {
   margin-right: 20rpx;
+}
+#register .register-block .action-block .action-item .picker-box.data-v-fd534bf9 {
+  flex: 1;
+  font-size: 32rpx;
+  margin: 0 20rpx;
 }
 #register .register-block .action-block .tip-block.data-v-fd534bf9 {
   border: 0;

@@ -34,7 +34,9 @@
 				</view>
 				<view class="action-item">
 					<view class="title">年级</view>
-					<input class="input-box" type="text" placeholder="输入年级,如2021级" />
+					<picker mode="date" fields="year" class="picker-box">
+					    <text style="color: #666;">请选择入学年份</text>
+					</picker>
 				</view>
 				<view class="action-item">
 					<view class="title">学院</view>
@@ -59,6 +61,7 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 
 </script>
 
@@ -81,12 +84,17 @@
 				}
 				.radio-box {
 					flex: 1;
+					font-size: 32rpx;
 					margin: 0 20rpx;
 					.radio-item {
 						margin-right: 20rpx;
 					}
 				}
-				
+				.picker-box {
+					flex: 1;
+					font-size: 32rpx;
+					margin: 0 20rpx;
+				}
 			}
 			.tip-block {
 				border: 0;
