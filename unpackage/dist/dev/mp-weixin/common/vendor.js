@@ -6841,9 +6841,9 @@ function initOnError() {
   };
 }
 function initRuntimeSocketService() {
-  const hosts = "192.168.31.34,127.0.0.1";
+  const hosts = "10.27.193.171,127.0.0.1";
   const port = "8090";
-  const id = "mp-weixin_cEQhHP";
+  const id = "mp-weixin_FYdNnL";
   const lazy = typeof swan !== "undefined";
   let restoreError = lazy ? () => {
   } : initOnError();

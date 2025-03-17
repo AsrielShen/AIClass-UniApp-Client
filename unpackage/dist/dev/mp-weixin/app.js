@@ -8,7 +8,6 @@ if (!Math) {
   "./pages/courses/join-course.js";
   "./pages/courses/manage-course.js";
   "./pages/ai/ai-help.js";
-  "./pages/user/user.js";
   "./pages/teacher/features.js";
   "./pages/teacher/sign-in.js";
   "./pages/teacher/random-call.js";
@@ -19,6 +18,9 @@ if (!Math) {
   "./pages/student/features.js";
   "./pages/student/homework-list.js";
   "./pages/student/test-list.js";
+  "./pages/user/user.js";
+  "./pages/user/login.js";
+  "./pages/user/register.js";
 }
 const _sfc_main = {
   onLaunch: function() {

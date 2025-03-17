@@ -6,7 +6,6 @@
     "pages/courses/join-course",
     "pages/courses/manage-course",
     "pages/ai/ai-help",
-    "pages/user/user",
     "pages/teacher/features",
     "pages/teacher/sign-in",
     "pages/teacher/random-call",
@@ -16,7 +15,10 @@
     "pages/teacher/test/test-list",
     "pages/student/features",
     "pages/student/homework-list",
-    "pages/student/test-list"
+    "pages/student/test-list",
+    "pages/user/user",
+    "pages/user/login",
+    "pages/user/register"
   ],
   "window": {
     "navigationBarTextStyle": "black",

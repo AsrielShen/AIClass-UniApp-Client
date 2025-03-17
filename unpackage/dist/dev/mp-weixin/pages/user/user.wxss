@@ -34,10 +34,10 @@
   line-height: 50rpx;
   color: #8b8b8b;
 }
-#user .func-block.data-v-0f7520f0 {
+#user .action-block.data-v-0f7520f0 {
   margin: 50rpx 0;
 }
-#user .func-block .func-item.data-v-0f7520f0 {
+#user .action-block .item.data-v-0f7520f0 {
   height: 100rpx;
   background-color: #fff;
   border-top: 1rpx solid #ccc;
@@ -46,16 +46,16 @@
   display: flex;
   align-items: center;
 }
-#user .func-block .func-item .icon.data-v-0f7520f0 {
+#user .action-block .item .icon.data-v-0f7520f0 {
   height: 75rpx;
   width: 75rpx;
 }
-#user .func-block .func-item .text.data-v-0f7520f0 {
+#user .action-block .item .text.data-v-0f7520f0 {
   margin: 0 20rpx;
   font-size: 40rpx;
   line-height: 100rpx;
 }
-#user .func-block .func-item.data-v-0f7520f0::after {
+#user .action-block .item.data-v-0f7520f0::after {
   content: '›';
   /* 右箭头符号 */
   margin-left: auto;

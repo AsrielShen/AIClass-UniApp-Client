@@ -42,13 +42,7 @@
 				"navigationBarTitleText" : "AI助手"
 			}
 		},
-		{
-			"path" : "pages/user/user",
-			"style" : 
-			{
-				"navigationBarTitleText" : "用户中心"
-			}
-		},
+		
 		// teacher
 		{
 			"path" : "pages/teacher/features",
@@ -119,6 +113,28 @@
 			"style" : 
 			{
 				"navigationBarTitleText" : "课堂练习"
+			}
+		},
+		//个人中心 登录 注册
+		{
+			"path" : "pages/user/user",
+			"style" : 
+			{
+				"navigationBarTitleText" : "用户中心"
+			}
+		},
+		{
+			"path" : "pages/user/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "用户登录"
+			}
+		},
+		{
+			"path" : "pages/user/register",
+			"style" : 
+			{
+				"navigationBarTitleText" : "账号注册"
 			}
 		}
 	],

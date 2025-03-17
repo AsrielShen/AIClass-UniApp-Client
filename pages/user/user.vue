@@ -13,9 +13,9 @@
 				</view>
 			</view>
 			<view class="lower">
-				<view class="info-detail">
+				<!-- <view class="info-detail">
 					学校：厦门大学
-				</view>
+				</view> -->
 				<view class="info-detail">
 					学院：信息学院
 				</view>
@@ -23,36 +23,36 @@
 					专业：计算机科学与技术
 				</view>
 				<view class="info-detail">
-					年纪：2021级
+					年级：2021级
 				</view>
 			</view>
 		</view>
-		<view class="func-block">
-			<navigator class="func-item">
+		<view class="action-block">
+			<navigator class="item">
 				<image class="icon" src="/static/tabBar-icon/courses-h.png" />
 				<view class="text">
 					关于
 				</view>
 			</navigator>
-			<navigator class="func-item">
+			<navigator class="item">
 				<image class="icon" src="/static/tabBar-icon/courses-h.png" />
 				<view class="text">
 					关于
 				</view>
 			</navigator>
-			<navigator class="func-item">
+			<navigator class="item">
 				<image class="icon" src="/static/tabBar-icon/courses-h.png" />
 				<view class="text">
 					关于
 				</view>
 			</navigator>
-			<navigator class="func-item">
+			<navigator class="item">
 				<image class="icon" src="/static/tabBar-icon/courses-h.png" />
 				<view class="text">
 					关于
 				</view>
 			</navigator>
-			<navigator class="func-item">
+			<navigator class="item">
 				<image class="icon" src="/static/tabBar-icon/courses-h.png" />
 				<view class="text">
 					关于
@@ -107,9 +107,9 @@
 			}
 		}
 	}
-	.func-block{
+	.action-block{
 		margin: 50rpx 0;
-		.func-item{
+		.item{
 			height: 100rpx;
 			background-color: #fff;
 			border-top: 1rpx solid #ccc;

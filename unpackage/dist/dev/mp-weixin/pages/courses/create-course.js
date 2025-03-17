@@ -15,28 +15,17 @@ const _sfc_main = {
     const openShow = () => {
       isShow.value = true;
     };
-    const cancelShow = () => {
-      isShow.value = false;
-    };
-    const formSubmit = () => {
-      common_vendor.index.__f__("log", "at pages/courses/create-course.vue:77", "here is submit");
-    };
     const formReset = () => {
-      common_vendor.index.__f__("log", "at pages/courses/create-course.vue:80", "here is reset");
+      common_vendor.index.__f__("log", "at pages/courses/create-course.vue:65", "here is reset");
     };
     return (_ctx, _cache) => {
-      return common_vendor.e({
+      return {
         a: common_vendor.p({
           title: "创建课程"
         }),
         b: common_vendor.o(openShow),
-        c: common_vendor.o(formReset),
-        d: isShow.value
-      }, isShow.value ? {
-        e: common_vendor.o(formSubmit),
-        f: common_vendor.o(cancelShow),
-        g: common_vendor.o(cancelShow)
-      } : {});
+        c: common_vendor.o(formReset)
+      };
     };
   }
 };

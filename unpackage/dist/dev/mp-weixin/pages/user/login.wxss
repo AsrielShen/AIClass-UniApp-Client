@@ -1,0 +1,29 @@
+#login .login-block .action-block.data-v-6163e5ce {
+  margin: 20rpx 0;
+  padding: 10rpx 30rpx;
+  background-color: #fff;
+}
+#login .login-block .action-block .action-item.data-v-6163e5ce {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+#login .login-block .action-block .action-item .input-box.data-v-6163e5ce {
+  flex: 1;
+  font-size: 32rpx;
+  margin: 0 20rpx;
+}
+#login .login-block .action-block .tip-block.data-v-6163e5ce {
+  border: 0;
+  font-size: 24rpx;
+  color: gray;
+}
+#login .login-block .action-block .button.data-v-6163e5ce {
+  font-size: 32rpx;
+  margin: 10rpx 0;
+  border-radius: 50rpx;
+  color: #fff;
+  background-color: #39c5bb;
+  border: none;
+}

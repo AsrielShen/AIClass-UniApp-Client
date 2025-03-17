@@ -1,0 +1,41 @@
+#register .register-block .action-block.data-v-fd534bf9 {
+  margin: 20rpx 0;
+  padding: 10rpx 30rpx;
+  background-color: #fff;
+}
+#register .register-block .action-block .action-item.data-v-fd534bf9 {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+#register .register-block .action-block .action-item .input-box.data-v-fd534bf9 {
+  flex: 1;
+  font-size: 32rpx;
+  margin: 0 20rpx;
+}
+#register .register-block .action-block .action-item .radio-box.data-v-fd534bf9 {
+  flex: 1;
+  margin: 0 20rpx;
+}
+#register .register-block .action-block .action-item .radio-box .radio-item.data-v-fd534bf9 {
+  margin-right: 20rpx;
+}
+#register .register-block .action-block .tip-block.data-v-fd534bf9 {
+  border: 0;
+  font-size: 24rpx;
+  color: gray;
+}
+#register .register-block .action-block .tip-block .blue.data-v-fd534bf9 {
+  margin-left: 5rpx;
+  color: #39c5bb;
+  font-weight: bold;
+}
+#register .register-block .action-block .button.data-v-fd534bf9 {
+  font-size: 32rpx;
+  margin: 10rpx 0;
+  border-radius: 50rpx;
+  color: #fff;
+  background-color: #39c5bb;
+  border: none;
+}
