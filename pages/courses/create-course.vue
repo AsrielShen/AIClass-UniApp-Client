@@ -8,30 +8,21 @@
 						<view class="title">
 							课程名
 						</view>
-						<input 
-							class="input-box" 
-							type="text"
-							placeholder="请输入课程名"
-						/>
+						<input class="input-box" type="text" placeholder="请输入课程名" />
 					</view>
 					<view class="detail-block">
 						<view class="title">
 							课程描述
 						</view>
-						<textarea 
-							class="large-textarea" 
-							type="text"
-							auto-height
-							disable-default-padding
-							placeholder="请输入描述信息"
-						/>
+						<textarea class="large-textarea" type="text" auto-height disable-default-padding
+							placeholder="请输入描述信息" />
 					</view>
 					<view class="action-item">
 						<view class="title">
 							学生名单
 						</view>
 						<view class="file-name">{{fileName}}</view>
-						<button class="upload-button" @click="selectFile">选择文件</button>						
+						<button class="upload-button" @click="selectFile">选择文件</button>
 					</view>
 					<view class="action-item tip-block">
 						提示：可选择提交格式为excel，首行元素分别为studentNumber,studentName
@@ -50,27 +41,34 @@ import { ref } from "vue"
 const fileName = ref("");
 let filePath = '';
 
-const formSubmit = ()=> {
+const formSubmit = () => {
 	console.log("here is submit");
 }
-const formReset = ()=> {
+const formReset = () => {
 	fileName.value = "";
 	filePath = "";
 	console.log("here is reset");
 }
 
 const selectFile = () => {
-	uni.chooseFile({
+	wx.chooseMessageFile({
+		count: 1,
+		type: 'file',
+		extension: ['.xls', '.xlsx'],
 		success: (res) => {
 			const file = res.tempFiles[0];
-			fileName.value = file.name;
-			const isExcel = /\.(xls|xlsx)$/i.test(fileName.value); // 判断文件类型是否为 Excel（.xls 或 .xlsx）
+			const isExcel = /\.(xls|xlsx)$/i.test(file.name); // 判断文件类型是否为 Excel（.xls 或 .xlsx）
+			
 			if (isExcel) {
+				fileName.value = file.name;
 				filePath = file.path;
+				console.log("选择的文件是 Excel 文件:", fileName);
+				console.log("文件路径:", filePath);
 			} else {
-				uni.showToast({
+				wx.showToast({
 					title: '请选择 Excel 文件',
 					icon: 'error',
+					duration: 2000,
 				});
 			}
 		},
@@ -79,8 +77,6 @@ const selectFile = () => {
 		}
 	});
 };
-
-
 </script>
 
 <style lang="less" scoped>
@@ -90,23 +86,30 @@ const selectFile = () => {
 			margin: 20rpx 0;
 			padding: 0 30rpx;
 			background-color: #fff;
+
 			.action-item {
 				display: flex;
 				align-items: center;
 				padding: 20rpx 0;
 				border-bottom: 1rpx solid #ccc;
+
 				.input-box {
 					flex: 1;
 					margin-left: 20rpx;
 				}
+
 				.file-name {
 					margin: 0 20rpx;
 					flex: 1;
 					color: gray;
-					white-space: nowrap;       /* 禁止换行 */
-					overflow: hidden;          /* 超出部分隐藏 */
-					text-overflow: ellipsis;   /* 超出部分显示省略号 */
+					white-space: nowrap;
+					/* 禁止换行 */
+					overflow: hidden;
+					/* 超出部分隐藏 */
+					text-overflow: ellipsis;
+					/* 超出部分显示省略号 */
 				}
+
 				.upload-button {
 					font-size: 24rpx;
 					border-radius: 15rpx;
@@ -115,9 +118,11 @@ const selectFile = () => {
 					border: none
 				}
 			}
+
 			.detail-block {
 				padding: 20rpx 0;
 				border-bottom: 1rpx solid #ccc;
+
 				.large-textarea {
 					width: 100%;
 					min-height: 250rpx;
@@ -128,12 +133,14 @@ const selectFile = () => {
 					border-radius: 10rpx;
 				}
 			}
+
 			.tip-block {
 				border: 0;
 				font-size: 24rpx;
 				color: gray;
-				
+
 			}
+
 			.button {
 				font-size: 32rpx;
 				margin: 20rpx 0;
@@ -142,6 +149,7 @@ const selectFile = () => {
 				background-color: #39c5bb;
 				border: none
 			}
+
 			.red {
 				color: red;
 				border: 1rpx solid red;
@@ -149,6 +157,6 @@ const selectFile = () => {
 			}
 		}
 	}
-	
+
 }
 </style>
