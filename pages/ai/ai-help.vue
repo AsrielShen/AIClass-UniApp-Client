@@ -20,21 +20,15 @@
 
 <script setup>
 import { ref } from 'vue';
+import { globalData } from '@/utils/config.js'
 import MarkdownIt from 'markdown-it';
+
 
 const userInput = ref('');
 const chatHistory = ref([
 	{
 		type: 'ai',
-		message: '**您好！** 请问有什么问题我可以帮助您解答？'
-	},
-	{
-		type: 'user',
-		message: '什么是 Vue 3？'
-	},
-	{
-		type: 'ai',
-		message: 'Vue 3 是一个 **渐进式框架**，用于构建用户界面。'
+		message: '**您好！** 这里是ai问答'
 	}
 ]);
 
@@ -55,20 +49,41 @@ const sendMessage = () => {
 		type: 'user',
 		message: userInput.value
 	});
-
 	// 清空输入框
 	const message = userInput.value;
 	userInput.value = '';
 
-	// 假设 AI 回答
-	const aiResponse = `这是AI的回答：**${message}**`;
-
-	// 添加 AI 消息到对话记录
-	chatHistory.value.push({
-		type: 'ai',
-		message: aiResponse
-	});
-	}
+	uni.request({
+		url: globalData.baseUrl + '/ai/generate/',
+		method: 'POST',
+		data: message,
+		header: {
+			'Content-Type': 'application/json'
+		},
+		success: (res) => {
+			const backData = res.data;
+			console.log(backData);
+			if(backData.code === 0) {
+				// 返回AI 回答
+				const aiResponse = backData.data.generatedText;
+				// 添加 AI 消息到对话记录
+				chatHistory.value.push({
+					type: 'ai',
+					message: aiResponse
+				});
+			}
+			else {
+				uni.showToast({
+					title: "生成失败！",
+					icon: "error"
+				});
+			}
+		},
+		fail: (e)=> {
+			uni.showToast({ title: "网络异常", icon: 'error' })
+		}
+	})
+}
 </script>
 
 <style lang="less" scoped>

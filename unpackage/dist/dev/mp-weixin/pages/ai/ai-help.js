@@ -1,5 +1,6 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
+const utils_config = require("../../utils/config.js");
 const _sfc_main = {
   __name: "ai-help",
   setup(__props) {
@@ -7,15 +8,7 @@ const _sfc_main = {
     const chatHistory = common_vendor.ref([
       {
         type: "ai",
-        message: "**您好！** 请问有什么问题我可以帮助您解答？"
-      },
-      {
-        type: "user",
-        message: "什么是 Vue 3？"
-      },
-      {
-        type: "ai",
-        message: "Vue 3 是一个 **渐进式框架**，用于构建用户界面。"
+        message: "**您好！** 这里是ai问答"
       }
     ]);
     const md = new common_vendor.MarkdownIt();
@@ -31,10 +24,32 @@ const _sfc_main = {
       });
       const message = userInput.value;
       userInput.value = "";
-      const aiResponse = `这是AI的回答：**${message}**`;
-      chatHistory.value.push({
-        type: "ai",
-        message: aiResponse
+      common_vendor.index.request({
+        url: utils_config.globalData.baseUrl + "/ai/generate/",
+        method: "POST",
+        data: message,
+        header: {
+          "Content-Type": "application/json"
+        },
+        success: (res) => {
+          const backData = res.data;
+          common_vendor.index.__f__("log", "at pages/ai/ai-help.vue:65", backData);
+          if (backData.code === 0) {
+            const aiResponse = backData.data.generatedText;
+            chatHistory.value.push({
+              type: "ai",
+              message: aiResponse
+            });
+          } else {
+            common_vendor.index.showToast({
+              title: "生成失败！",
+              icon: "error"
+            });
+          }
+        },
+        fail: (e) => {
+          common_vendor.index.showToast({ title: "网络异常", icon: "error" });
+        }
       });
     };
     return (_ctx, _cache) => {

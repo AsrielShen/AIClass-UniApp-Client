@@ -3,33 +3,31 @@
 		<view class="create-block">
 			<block-bar-other title="创建课程" />
 			<view class="action-block">
-				<form @submit="formSubmit" @reset="formReset">
-					<view class="action-item">
-						<view class="title">
-							课程名
-						</view>
-						<input class="input-box" type="text" placeholder="请输入课程名" />
+				<view class="action-item">
+					<view class="title">
+						课程名
 					</view>
-					<view class="detail-block">
-						<view class="title">
-							课程描述
-						</view>
-						<textarea class="large-textarea" type="text" auto-height disable-default-padding
-							placeholder="请输入描述信息" />
+					<input v-model="courseName" class="input-box" type="text" placeholder="请输入课程名" />
+				</view>
+				<view class="detail-block">
+					<view class="title">
+						课程描述
 					</view>
-					<view class="action-item">
-						<view class="title">
-							学生名单
-						</view>
-						<view class="file-name">{{fileName}}</view>
-						<button class="upload-button" @click="selectFile">选择文件</button>
+					<textarea v-model="courseDes" class="large-textarea" type="text" auto-height disable-default-padding
+						placeholder="请输入描述信息" />
+				</view>
+				<view class="action-item">
+					<view class="title">
+						学生名单
 					</view>
-					<view class="action-item tip-block">
-						提示：可选择提交格式为excel，首行元素分别为studentNumber,studentName
-					</view>
-					<button form-type="submit" class="button">提交</button>
-					<button form-type="reset" class="button red">重置</button>
-				</form>
+					<view class="file-name">{{fileName}}</view>
+					<button class="upload-button" @click="selectFile">选择文件</button>
+				</view>
+				<view class="action-item tip-block">
+					提示：可选择提交格式为excel，首行元素分别为studentNumber,studentName
+				</view>
+				<button @click="formSubmit" class="button">提交</button>
+				<button @click="formReset" class="button red">重置</button>
 			</view>
 		</view>
 	</view>
@@ -37,12 +35,47 @@
 
 <script setup>
 import { ref } from "vue"
+import { globalData } from '@/utils/config.js'
 
+const courseName = ref("");
+const courseDes = ref("");
 const fileName = ref("");
 let filePath = '';
+const userInfo = uni.getStorageSync('userInfo');
 
 const formSubmit = () => {
-	console.log("here is submit");
+	uni.uploadFile({
+	    url: globalData.baseUrl + "/course/create", // 你的后端接口
+	    filePath: filePath,
+	    name: 'file',
+	    formData: {
+			courseName: courseName.value,
+			description: courseDes.value,
+			token: userInfo.token
+	    },
+	    success: (res) => {
+			const backData = JSON.parse(res.data);
+			if (backData.code == 0) {
+				uni.showToast({
+					title: "创建成功！",
+					icon: "success"
+				});
+			}
+			else {
+				uni.showToast({
+					title: "创建失败！",
+					icon: "error"
+				});
+			}
+	    },
+	    fail: (err) => {
+			console.error(err);
+			uni.showToast({
+				title: "上传失败",
+				icon: "error"
+			});
+	    }
+	  });
 }
 const formReset = () => {
 	fileName.value = "";
