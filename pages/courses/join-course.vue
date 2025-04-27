@@ -14,12 +14,7 @@
 					focus 
 					placeholder="请输入课程码"
 				/>
-				<button 
-					class="action-button" 
-					:class="{disabled: courseNum.length !== 10}"
-					@click="searchFunc"
-					:disabled="courseNum.length !== 10"
-				>
+				<button class="action-button" @click="searchFunc">
 					查询
 				</button>
 			</view>
@@ -30,8 +25,7 @@
 					查询课程
 				</view>
 				<view class="pop-content">
-					<view>课程名：</view>
-					<view>老师：</view>
+					<view>课程名：{{course.courseName}}</view>
 				</view>
 				<view class="pop-action">
 					<button class="button" @click="joinSubmit">加入</button>
@@ -44,22 +38,84 @@
 
 <script setup>
 import { ref } from "vue"
+import { globalData } from '@/utils/config.js'
 
-const isShow = ref(false);
+const isShow = ref();
+const courseNum = ref('');
+const course = ref({});
+const userInfo = uni.getStorageSync('userInfo');
+
 const cancelShow = ()=> {
 	isShow.value = false;
 }
 
-const courseNum = ref('');
-
 const searchFunc = ()=> {
-	isShow.value = true;
-	console.log(courseNum.value);
+	uni.request({
+		url: globalData.baseUrl + '/course/getById/' + courseNum.value,
+		header: {
+			'Content-Type': 'application/json'
+		},
+		success: (res) => {
+			const backData = res.data;
+			if(backData.code === 0) {
+				isShow.value = true;
+				course.value = backData.data;
+				console.log(course.value);
+			}
+			else {
+				uni.showToast({
+					title: "查询失败！",
+					icon: "error"
+				});
+			}
+		},
+		fail: (e)=> {
+			uni.showToast({ title: "网络异常", icon: 'error' })
+		}
+	})
 }
 
+
 const joinSubmit = ()=> {
-	courseNum.value = '';
-	cancelShow();
+	uni.request({
+		url: globalData.baseUrl + '/course/join/' + userInfo.token,
+		method: 'POST',
+		data: course.value.id,
+		header: {
+			'Content-Type': 'application/json'
+		},
+		success: (res) => {
+			const backData = res.data;
+			console.log(backData);
+			if(backData.code === 0) {
+				courseNum.value = '';
+				cancelShow();
+				uni.showToast({
+					title: "添加成功！",
+					icon: "success"
+				});
+			}
+			else if(backData.code === 1){
+				uni.showToast({
+					title: "添加失败！",
+					icon: "error"
+				});
+			}
+			else {
+				uni.showToast({
+					title: "认证错误，请重新登录",
+					icon: "error"
+				});
+				uni.removeStorageSync("userInfo");
+				uni.redirectTo({
+				    url: "/pages/user/login" 
+				});
+			}
+		},
+		fail: (e)=> {
+			uni.showToast({ title: "网络异常", icon: 'error' })
+		}
+	})
 }
 
 </script>
