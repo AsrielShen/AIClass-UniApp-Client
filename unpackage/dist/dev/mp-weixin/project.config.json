@@ -18,8 +18,8 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "3.7.8",
-  "appid": "touristappid",
+  "libVersion": "3.8.0",
+  "appid": "wx83f72a410cba9365",
   "projectname": "ClientUniApp",
   "condition": {
     "search": {

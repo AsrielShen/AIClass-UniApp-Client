@@ -12,19 +12,61 @@ if (!Math) {
 const _sfc_main = {
   __name: "index",
   setup(__props) {
+    const handleCreateCourse = () => {
+      const userInfo = common_vendor.index.getStorageSync("userInfo");
+      if (userInfo && userInfo.role === "student") {
+        common_vendor.index.showToast({
+          title: "无权限访问",
+          icon: "none"
+        });
+      } else {
+        common_vendor.index.navigateTo({
+          url: "/pages/courses/create-course"
+        });
+      }
+    };
+    const handleJoinCourse = () => {
+      const userInfo = common_vendor.index.getStorageSync("userInfo");
+      if (userInfo && userInfo.role === "student") {
+        common_vendor.index.navigateTo({
+          url: "/pages/courses/join-course"
+        });
+      } else {
+        common_vendor.index.showToast({
+          title: "老师不能申请课程",
+          icon: "none"
+        });
+      }
+    };
+    const handleManageCourse = () => {
+      const userInfo = common_vendor.index.getStorageSync("userInfo");
+      if (userInfo && userInfo.role === "student") {
+        common_vendor.index.showToast({
+          title: "无权限访问",
+          icon: "none"
+        });
+      } else {
+        common_vendor.index.navigateTo({
+          url: "/pages/courses/manage-course"
+        });
+      }
+    };
     return (_ctx, _cache) => {
       return {
         a: common_assets._imports_0,
-        b: common_assets._imports_0,
-        c: common_assets._imports_1,
-        d: common_assets._imports_1,
-        e: common_vendor.p({
+        b: common_vendor.o(handleCreateCourse),
+        c: common_assets._imports_0,
+        d: common_vendor.o(handleJoinCourse),
+        e: common_assets._imports_1,
+        f: common_assets._imports_1,
+        g: common_vendor.o(handleManageCourse),
+        h: common_vendor.p({
           title: "更多资源"
         }),
-        f: common_assets._imports_2,
-        g: common_assets._imports_2,
-        h: common_assets._imports_2,
-        i: common_assets._imports_2
+        i: common_assets._imports_2,
+        j: common_assets._imports_2,
+        k: common_assets._imports_2,
+        l: common_assets._imports_2
       };
     };
   }

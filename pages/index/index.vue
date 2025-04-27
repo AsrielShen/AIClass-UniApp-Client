@@ -1,11 +1,11 @@
 <template>
 	<view id="index" class="bg-color">
 		<view class="main-func">
-			<navigator class="item" url="/pages/courses/create-course">
+			<navigator @tap="handleCreateCourse" class="item">
 				<image class="pic" src="/static/main-icon/create-course.png"></image>
 				<view class="text">创建课程</view>
 			</navigator>
-			<navigator class="item" url="/pages/courses/join-course">
+			<navigator @tap="handleJoinCourse" class="item">
 				<image class="pic" src="/static/main-icon/create-course.png"></image>
 				<view class="text">申请课程</view>
 			</navigator>
@@ -13,7 +13,7 @@
 				<image class="pic" src="/static/main-icon/enter-course.png"></image>
 				<view class="text">进入课程</view>
 			</navigator>
-			<navigator class="item" url="/pages/courses/manage-course">
+			<navigator @tap="handleManageCourse" class="item">
 				<image class="pic" src="/static/main-icon/enter-course.png"></image>
 				<view class="text">管理课程</view>
 			</navigator>
@@ -46,7 +46,51 @@
 </template>
 
 <script setup>
-// import BlockBar from './components/BlockBar.vue'
+
+import { ref } from 'vue'
+
+const handleCreateCourse = () => {
+	const userInfo = uni.getStorageSync('userInfo')
+	if (userInfo && userInfo.role === 'student') {
+		uni.showToast({
+			title: '无权限访问',
+			icon: 'none'
+		})
+	} else {
+		uni.navigateTo({
+			url: '/pages/courses/create-course'
+		})
+	}
+}
+
+const handleJoinCourse = () => {
+	const userInfo = uni.getStorageSync('userInfo')
+	if (userInfo && userInfo.role === 'student') {
+		uni.navigateTo({
+			url: '/pages/courses/join-course'
+		})
+	} else {
+		uni.showToast({
+			title: '老师不能申请课程',
+			icon: 'none'
+		})
+	}
+}
+
+const handleManageCourse = () => {
+	const userInfo = uni.getStorageSync('userInfo')
+	if (userInfo && userInfo.role === 'student') {
+		// 如果是学生，提示不可访问
+		uni.showToast({
+			title: '无权限访问',
+			icon: 'none'
+		})
+	} else {
+		uni.navigateTo({
+			url: '/pages/courses/manage-course'
+		})
+	}
+}
 	
 </script>
 

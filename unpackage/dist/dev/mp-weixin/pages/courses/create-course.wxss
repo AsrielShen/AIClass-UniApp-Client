@@ -11,7 +11,25 @@
 }
 #create-course .create-block .action-block .action-item .input-box.data-v-2afda07d {
   flex: 1;
+  margin-left: 20rpx;
+}
+#create-course .create-block .action-block .action-item .file-name.data-v-2afda07d {
   margin: 0 20rpx;
+  flex: 1;
+  color: gray;
+  white-space: nowrap;
+  /* 禁止换行 */
+  overflow: hidden;
+  /* 超出部分隐藏 */
+  text-overflow: ellipsis;
+  /* 超出部分显示省略号 */
+}
+#create-course .create-block .action-block .action-item .upload-button.data-v-2afda07d {
+  font-size: 24rpx;
+  border-radius: 15rpx;
+  color: #fff;
+  background-color: #39c5bb;
+  border: none;
 }
 #create-course .create-block .action-block .detail-block.data-v-2afda07d {
   padding: 20rpx 0;
@@ -20,7 +38,7 @@
 #create-course .create-block .action-block .detail-block .large-textarea.data-v-2afda07d {
   width: 100%;
   min-height: 250rpx;
-  margin: 20rpx 0;
+  margin-top: 20rpx;
   padding: 20rpx 15rpx;
   box-sizing: border-box;
   border: 1px solid #ccc;

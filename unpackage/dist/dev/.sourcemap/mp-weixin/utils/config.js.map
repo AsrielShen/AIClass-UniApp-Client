@@ -1,0 +1,1 @@
+{"version":3,"file":"config.js","sources":["utils/config.js"],"sourcesContent":["export const globalData = {\n  baseUrl: 'http://localhost:8080',\n}"],"names":[],"mappings":";AAAY,MAAC,aAAa;AAAA,EACxB,SAAS;AACX;;"}

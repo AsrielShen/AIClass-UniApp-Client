@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "修改个人信息",
+  "usingComponents": {
+    "block-bar-other": "../../components/block-bar-other/block-bar-other"
+  }
+}

@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/user/login",
+    "pages/user/register",
     "pages/index/index",
     "pages/courses/enter-course",
     "pages/courses/create-course",
@@ -17,8 +19,8 @@
     "pages/student/homework-list",
     "pages/student/test-list",
     "pages/user/user",
-    "pages/user/login",
-    "pages/user/register"
+    "pages/user/modify-student",
+    "pages/user/modify-password"
   ],
   "window": {
     "navigationBarTextStyle": "black",

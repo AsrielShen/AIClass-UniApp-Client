@@ -8,6 +8,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/student/features",
+          "pathName": "pages/student/features",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/user/login",
           "pathName": "pages/user/login",
           "query": "",

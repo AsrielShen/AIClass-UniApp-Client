@@ -1,5 +1,19 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/user/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "用户登录"
+			}
+		},
+		{
+			"path" : "pages/user/register",
+			"style" : 
+			{
+				"navigationBarTitleText" : "账号注册"
+			}
+		},
 		{
 			"path": "pages/index/index",
 			"style": 
@@ -124,19 +138,19 @@
 			}
 		},
 		{
-			"path" : "pages/user/login",
+			"path" : "pages/user/modify-student",
 			"style" : 
 			{
-				"navigationBarTitleText" : "用户登录"
+				"navigationBarTitleText" : "修改个人信息"
 			}
 		},
 		{
-			"path" : "pages/user/register",
+			"path" : "pages/user/modify-password",
 			"style" : 
 			{
-				"navigationBarTitleText" : "账号注册"
+				"navigationBarTitleText" : "修改密码"
 			}
-		}
+		},
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
