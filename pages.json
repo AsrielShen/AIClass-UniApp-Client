@@ -50,6 +50,34 @@
 			}
 		},
 		{
+			"path" : "pages/courses/course-feature",
+			"style" : 
+			{
+				"navigationBarTitleText" : "课程管理"
+			}
+		},
+		{
+			"path" : "pages/courses/feature/modify-course",
+			"style" : 
+			{
+				"navigationBarTitleText" : "课堂信息修改"
+			}
+		},
+		{
+			"path" : "pages/courses/feature/student-all",
+			"style" : 
+			{
+				"navigationBarTitleText" : "学生管理"
+			}
+		},
+		{
+			"path" : "pages/courses/feature/student-late",
+			"style" : 
+			{
+				"navigationBarTitleText" : "迟到管理"
+			}
+		},
+		{
 			"path" : "pages/ai/ai-help",
 			"style" : 
 			{
